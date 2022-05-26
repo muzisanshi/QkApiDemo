@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- 测试用的隐藏的webView -->
+        <WebView
+            android:visibility="gone"
+            android:id="@+id/web_view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ccc"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp">
+
+                <Button
+                    android:id="@+id/call_app"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="模拟h5调用统一入口方法callApp（测试goBack）"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:id="@+id/to_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="模拟h5调用toLogin"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:id="@+id/application_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="模拟h5调用applicationResult"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:id="@+id/upload_device_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="模拟h5调用uploadDeviceInfo"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:id="@+id/upload_contact_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="模拟h5调用uploadContactList"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:id="@+id/upload_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="模拟h5调用uploadImage"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:id="@+id/upload_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="模拟h5调用uploadVideo"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:id="@+id/upload_audio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="模拟h5调用uploadAudio"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:id="@+id/upload_app_install_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="模拟h5调用uploadAppInstallInfo"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:id="@+id/send_event"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="模拟h5调用sendEvent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:id="@+id/save_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="模拟h5调用saveData"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:id="@+id/read_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="模拟h5调用readData"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:id="@+id/get_gps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="模拟h5调用getGps"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:id="@+id/go_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="模拟h5调用goBack"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:id="@+id/to_app_page"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="模拟h5调用toAppPage"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:id="@+id/get_token"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="模拟h5调用getToken"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:id="@+id/get_status_bar_height"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="模拟h5调用getStatusBarHeight"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:id="@+id/get_app_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="模拟h5调用getAppInfo"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textAllCaps="false"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>
