@@ -45,5 +45,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     // 提供给h5的api
-    implementation 'com.github.muzisanshi:QkApiAndroid:1.0.4'
+    implementation 'com.github.muzisanshi:QkApiAndroid:1.0.5'
 }
