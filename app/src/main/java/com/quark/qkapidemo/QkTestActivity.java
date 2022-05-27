@@ -126,7 +126,7 @@ public class QkTestActivity extends AppCompatActivity implements View.OnClickLis
                 .setCallback(new QkApi.Callback() {
                     @Override
                     public void onRequestError(JSONObject object) {
-                        QkToastUtils.show(QkCommonUtils.toJson(object));
+                        QkLogUtils.d("----onRequestError----",object.toString());
                     }
 
                     @Override
