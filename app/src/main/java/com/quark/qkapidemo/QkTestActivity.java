@@ -73,22 +73,22 @@ public class QkTestActivity extends AppCompatActivity implements View.OnClickLis
         // 设置上传设备信息接口地址
         urls.put("api-device","quark-loan-data/app/device/save");
         // 设置上传通讯录接口地址
-        urls.put("api-contact","quark-loan-data/app/personalContact/save");
+        urls.put("api-contact","quark-loan-data/app/personal-contact/save");
         // 设置上传图片信息接口地址
-        urls.put("api-image","quark-loan-data/app/photoAlbum/upload");
+        urls.put("api-image","quark-loan-data/app/photo-album/upload");
         // 设置上传视频信息接口地址
         urls.put("api-video","quark-loan-data/app/video/save");
         // 设置上传音频信息接口地址
         urls.put("api-audio","quark-loan-data/app/audio/save");
         // 设置上传app安装记录接口地址
-        urls.put("api-install","quark-loan-data/app/appInstalled/save");
+        urls.put("api-install","quark-loan-data/app/app-installed/save");
         // 设置上传埋点信息接口地址
-        urls.put("api-point","quark-loan-data/app/buriedPoint/save");
+        urls.put("api-point","quark-loan-data/app/buried-point/save");
         return urls;
     }
 
-    // 初始化webView，主要是注入js的回调方法
-    public void initWebView(){
+    // 注入js的回调方法
+    public void injectJs(){
         // 注入上传各种信息的回调
         qkApi.exeJs("window.uploadResult = function(msg){ alert(msg); }");
         // 读取本地数据的回调
@@ -102,7 +102,6 @@ public class QkTestActivity extends AppCompatActivity implements View.OnClickLis
         // 读取app信息
         qkApi.exeJs("window.setAppInfo = function(msg){ alert('app信息：'+msg); }");
     }
-
 
     // 初始化api，先设置必要的数据，最后调用api的初始化函数init()
     public void initApi(){
@@ -165,7 +164,7 @@ public class QkTestActivity extends AppCompatActivity implements View.OnClickLis
                 }).init();
 
         // 初始化webView
-        initWebView();
+        injectJs();
     }
 
     @Override
